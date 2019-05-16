@@ -1,0 +1,9 @@
+.employee-header-image {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmkq6F2_rRagDHPT9S8VbLldFyZuGUXe5qa6GJxBP20CoXQ1ok');
+    background-size: cover;
+}
+
+.mat-card{
+    width: 700px;
+    margin: 10px auto;
+}

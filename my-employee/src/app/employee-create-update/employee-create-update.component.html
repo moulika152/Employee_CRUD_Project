@@ -1,0 +1,21 @@
+<form [formGroup]="createForm">
+  <mat-card>
+    <mat-card-title>Create/Update Employee</mat-card-title>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput type="number" formControlName= "EmployeeId" placeholder="Employee id">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput type="text" formControlName= "EmployeeName" placeholder="Employee name">
+      </mat-form-field>
+      <br>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="createEmployee()"  [disabled]="!createForm.valid">Add</button>
+      <button mat-button color="primary" (click)="updateEmployee()"  [disabled]="!createForm.valid">Update</button>
+      <button mat-button color="primary" (click)="reset()">reset</button>
+      <button mat-button color="warn"  (click)="goBack()">close</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

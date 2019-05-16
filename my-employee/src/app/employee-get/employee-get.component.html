@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-title>Employee Details</mat-card-title>
+    <mat-card-actions>
+      <div>
+        <button mat-button color="warn"  (click)="goBack()">close</button><br>
+      </div>
+    </mat-card-actions>
+
+<div style="width: 200px;">
+  <ag-grid-angular #agGrid style="width: 600px; height: 500px;" class="ag-theme-balham"
+               [gridOptions]="gridOptions" [rowData]="data"
+               [overlayLoadingTemplate]="overlayLoadingTemplate"
+              [overlayNoRowsTemplate]="overlayNoRowsTemplate">
+  </ag-grid-angular>
+</div>
+</mat-card>
